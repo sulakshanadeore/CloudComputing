@@ -1,0 +1,39 @@
+Introduction to Cloud Computing  and Cloud Services
+---------------------------------------------------------------------------
+
+What is Cloud Computing?
+Computing on the cloud.
+
+It is giving/delivering services such as servers, storage,databases,networking, intelligence, analytics  over the cloud(internet).
+
+Cloud computing is an alternative to "on-premises data center", where the company has to manage everything, such as
+purchasing and installing hardware, virtualization,security, os , and any other network configurations, manpower required for it, and 
+if required go on upgrading when required.
+
+
+Two types of cloud:
+Private: a company owns it and uses it for itself.
+It gives more security but the cost is very high, its 24*7 available for ourselves only.
+All management is done by cloud company.(manage everything, such as
+purchasing and installing hardware, virtualization,security, os , and any other network configurations, manpower required for it, and 
+if required go on upgrading when required).
+
+--------------------------------------------------------------------------
+Public: when many companies share a cloud its called public cloud.
+It get security, but there may a very negligible  chance of security breach.
+but the cost is very less as compared to a private cloud, and its available 24*7.
+manage everything, such as
+purchasing and installing hardware, virtualization,security, os , and any other network configurations, manpower required for it, and 
+if required go on upgrading when required.
+
+--------------------------------------------------------------------------------------------------------------------
+Servers and Networking:  Infrastructure as a Service
+Storage :  Infrastructure as a Service
+Software/Platform : Software as a Service 
+
+
+
+
+
+
+
