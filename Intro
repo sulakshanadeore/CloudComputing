@@ -113,6 +113,48 @@ Which group can access data from which region, decided in the management group p
 
 IaM(Identity and Management) : Which resource group will have what level of  access will be decided by the Identity and Management of Azure Active Directory services.
 
+-----------------------------------------------------------------
+Availability Sets and Availability Zones:
+Availability is about the servers--database, application and storage.
+To keep it up and running we need copies of it in different zones and copies of it.
+
+Availability Zone: Where it is stored
+Availability Sets: How many copies of it to be created 
+
+AZ and AS depend on the pricing model.
+
+AZ(Availability zones) are geographically isolated data centers within a cloud region, each having its own independent power, cooling and networking infrastructure.
+AZ's are designed to be resilient to failures in one zone by ensuring that if a zone goes down, other remains operational, supporting regional services and capacity.
+
+Features of AZ:
+1) Isolation: physically and logically separated to minimise the impact of failure in one zone on others.
+2) Redundancy: Multiple AZ's within a region provide redundancy(repeatation) ensuring apps continue to operate even if one zone experiences a problem.
+3)Low Latency Connectivity: AZ's are connected via low-latency networks,allowing efficient replication and failover.
+4) Disaster Recovery: Protection of apps and data from data center failures.
+5) High Availability: because of distributed resources across multiple zones, apps maintain high availability and reliability.
+
+
+In Azure, Locally Redundant Storage(LRS):
+It copies data synchronously 3 times within a single data center in the primary key.
+It provides protection against server rack and drive failures, but is susceptible to data center failures like fire and floods
+This is the least expensive redundancy option and is not suggested for apps that need high availability or durability.
+It is suitable for scenarios where local data center availability is sufficient and cost is primary concern.
+
+ZRS---Zone Redundant Storage----
+It copies data synchronously across 3 AZ within primary regions.
+It has high availability than LRS as it protects against zone failures.
+It expensive than LRS but is a good choice for apps that need high availability or durability within a region.
+
+GRS-----Geo Redundant Storage
+It copies data synchronously across 3 AZ within primary regions and async replicates it to the secondary region using LRS.
+High availability and durability.
+More expensive than ZRS, offers protection against disaster, has highest level of protection for disaster recovery.
+
+RA-GRS----Read Access GRS--- GRS + copies of data stored in paired azure regions.
+99.99% read operation increases in SLA(Service Level Agreement)
+
+Object Replication for Block BLOB(Binary Large objects):
+This is specially available for only BLOB Storage. It has async replication storage, automatically can move data to archives.
 
 
 
