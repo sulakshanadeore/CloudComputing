@@ -26,10 +26,93 @@ manage everything, such as
 purchasing and installing hardware, virtualization,security, os , and any other network configurations, manpower required for it, and 
 if required go on upgrading when required.
 
+Hybrid Cloud: Combination of Private  and Public, whihc allows data apps to be shared between businesses.
+
+
 --------------------------------------------------------------------------------------------------------------------
 Servers and Networking:  Infrastructure as a Service
 Storage :  Infrastructure as a Service
 Software/Platform : Software as a Service 
+------------------------------------------------------------------------------------------------------------
+
+
+What are Cloud Service Provider?
+Some of them are:
+Azure---Microsoft
+Amazon Web Services--- Amazon
+Google Cloud Service---- Google
+Alibaba Cloud----Alibaba
+Oracle Cloud--Oracle
+IBM Cloud--IBM
+
+
+It is company or CSP(cloud service proivider) that provides on-demand scalable computing resources like computing power,
+data storage, appls, networking services over the internet.
+
+Advanatages:
+1) Reduced costs
+2) Scalability
+3) Reliabilty
+4) Centralised location
+5) Business Agile
+
+Disadvantages:
+1) Complex Contracts: SLA(Service level Agreement)--What is provided , what is not provided and in what circumstances.
+2)Security Responsibility: security to be implemented on both ends must be undertood in the agreement.
+
+How to choose the service provider factors:
+1) cost
+2) services
+3) security
+4) digital capability and processes
+5) trust
+----------------------------------------------------------------------------------------------------
+
+Terminologies in Azure:
+1) Resource: Any entity manage by Azure for ex: VM, storage Account or Virtual Network.
+2) Subscription: A logical container for resources, each resource is associated/tied up , and their subscription.
+3) Resource Group: A group of resources are related and can clubbed together.
+4) Management Group: A logical container for multiple subscriptions   used together 
+5)Azure AD(Active Directory): Identity and Access Management(Authorization and Authentication) management services controlling access to resources.
+6) Azure AD Tenant: A dedicated and a trusted instance of Azure AD, representing a single organisation.
+
+Deployment and Management
+1) ARM(Azure Resource Manager): A deployment model for creating and managing resources through templates
+2) ARM templates: Json files used to define infrastructure as code for deployment
+3) Azure CLI: A command line interface for managing Azure services
+4) Azure Powershell: A scripting language for managing and automating Azure services
+5) Virtual Network: A network which allows different resources to communicate privately
+6) Azure Blueprints: deploying and managing repeating infrastructure configurations
+7) Subnet: A range of ip addresses within the virtual network
+8)Azure Policy: Resource compliance for creating and enforcing policies on the users of the account
+9)Azure Advisor: A service that provides recommendation for optimization of Azure services.
+
+Resource and ResourceGroup:
+Website/Webapp, a database and storage account.
+Resources:
+1) A web server for hosting the website/webapp
+2)  A database for storing the data of the app
+3) a storage account for storing the app related data like audios,videos,image files etc
+
+Resource group of the above resources.
+
+Subscription: cost of the resources.
+Management Group: hierarchical structure for managing multiple subscriptions,policies and access control.
+
+PDTGroup:
+Production: limited access
+Development :full access
+Testing: limited access
+
+
+PRGroup:
+Production:full access
+Reporting:full access
+
+Which group can access data from which region, decided in the management group policy.
+
+IaM(Identity and Management) : Which resource group will have what level of  access will be decided by the Identity and Management of Azure Active Directory services.
+
 
 
 
